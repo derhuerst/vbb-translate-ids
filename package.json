@@ -10,5 +10,15 @@
 	"repository":  "derhuerst/vbb-translate-ids",
 	"bugs":        "https://github.com/derhuerst/vbb-lines/issues-at",
 	"license":     "ISC",
-	"engines":     {"node": ">=6"}
+	"engines":     {"node": ">=6"},
+	"devDependencies": {
+		"xlsx-rows": "^1.0.0"
+	},
+	"scripts": {
+		"download": "./download.sh",
+		"cleanup": "rm data/old-to-new.xlsx",
+		"build": "npm run download && node build.js && npm run cleanup",
+		"test": "node test.js",
+		"prepublish": "npm run build && npm test"
+	}
 }

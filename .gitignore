@@ -4,3 +4,9 @@ Thumbs.db
 .nvm-version
 node_modules
 npm-debug.log
+
+data/*
+data.zip
+
+old-to-new.json
+new-to-old.json
