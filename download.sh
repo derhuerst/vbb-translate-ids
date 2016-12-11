@@ -6,4 +6,4 @@ curl -# -L 'http://www.vbb.de/de/download/GTFS_VBB_Dez2016_Aug2017.zip' > data.z
 unzip -ju data.zip -d data
 rm data.zip
 rm data/*.zip
-mv data/Umschl%FCsselung_alte_in_neu_stop_id.xlsx data/old-to-new.xlsx
+mv $(ls -A1 data/*.xlsx | head -n 1) data/old-to-new.xlsx # VBB messed up the file name!
