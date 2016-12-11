@@ -1,0 +1,14 @@
+{
+	"name":        "vbb-translate-ids",
+	"description": "Translate VBB ids old -> new & new -> old.",
+	"version":     "2.0.0",
+	"main":        "old-to-new.json",
+	"files":       ["old-to-new.json", "new-to-old.json", "data.md", "vbb-logo.jpg"],
+	"keywords":    ["vbb", "stations", "ids", "new", "ids", "international"],
+	"author":      "Jannis R <mail@jannisr.de>",
+	"homepage":    "https://github.com/derhuerst/vbb-translate-ids",
+	"repository":  "derhuerst/vbb-translate-ids",
+	"bugs":        "https://github.com/derhuerst/vbb-lines/issues-at",
+	"license":     "ISC",
+	"engines":     {"node": ">=6"}
+}
