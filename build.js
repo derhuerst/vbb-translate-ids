@@ -14,6 +14,9 @@ const oldToNew = {}
 const newToOld = {}
 
 for (let row of data) {
+	if (row.old.toString() === row.new.toString())
+		console.warn(`${row.old} does not have a new id`)
+
 	oldToNew[row.old] = row.new
 	newToOld[row.new] = row.old
 }
