@@ -24,6 +24,8 @@ assert.strictEqual(to12Digit('900003201'), '900000003201')
 assert.strictEqual(to9Digit('900000003201'), '900003201')
 ```
 
+If `to12Digit`/`to9Digit` don't know how to translate the ID, they will just return it.
+
 
 ## Contributing
 
